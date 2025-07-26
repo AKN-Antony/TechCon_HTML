@@ -20,10 +20,75 @@
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!--
+        Check Main Content Structure:
+        <main> tag is used to wrap the core content.
+        Inside <main>, each section (History, Mission, Notable Past Speakers) is a separate <article>.
+    -->
     <main>
         <!-- HISTORY SECTION -->
         <article>
             <h2>Our History</h2>
             <p>
-                TechCon was established in 2010 as a modest local gathering for technology enthusiasts and professionals in San Francisco. Over the years
+                TechCon was established in 2010 as a modest local gathering for technology enthusiasts and professionals in San Francisco. Over the years, it has evolved into one of the most anticipated annual tech conferences, attracting attendees from around the world. TechCon has served as a launchpad for breakthrough innovations, startups, and meaningful collaborations shaping the global tech landscape.
+            </p>
+            <div class="history-images">
+                <!-- 
+                    Verify Embedded Images with Alt Attributes:
+                    Each <img> has an alt attribute describing its content.
+                -->
+                <img src="images/techcon2010.jpg" alt="TechCon 2010 Opening Ceremony" width="350">
+                <img src="images/techcon2018.jpg" alt="Crowd attending keynote at TechCon 2018" width="350">
+            </div>
+        </article>
+
+        <!-- MISSION SECTION -->
+        <article>
+            <h2>Our Mission</h2>
+            <p>
+                TechCon’s mission is to foster innovation, knowledge-sharing, and inclusivity in the technology sector. We strive to create an environment where ideas flourish, diversity is celebrated, and both established professionals and rising stars can find inspiration and opportunity. Our ultimate goal is to empower the tech community to solve real-world challenges and drive positive change.
+            </p>
+            <div class="mission-media">
+                <!-- Each <img> includes a descriptive alt attribute -->
+                <img src="images/mission_icon.png" alt="Mission Icon: Lightbulb representing innovation" width="80">
+                <img src="images/networking.jpg" alt="Conference attendees networking" width="350">
+            </div>
+        </article>
+
+        <!-- PAST SPEAKERS SECTION -->
+        <article>
+            <h2>Notable Past Speakers</h2>
+            <div class="speakers">
+                <section class="speaker-profile">
+                    <img src="images/speaker_ada_lovelace.jpg" alt="Ada Lovelace portrait" width="120">
+                    <h3>Ada Lovelace</h3>
+                    <p>
+                        Often regarded as the world's first computer programmer, Ada Lovelace has been a symbol of innovation and creativity in the tech field. At TechCon 2018, she inspired attendees with her enduring legacy and commitment to women in technology.
+                    </p>
+                </section>
+                <section class="speaker-profile">
+                    <img src="images/speaker_grace_hopper.jpg" alt="Grace Hopper portrait" width="120">
+                    <h3>Grace Hopper</h3>
+                    <p>
+                        A pioneer of computer programming and developer of the first compiler, Grace Hopper keynoted TechCon 2017. She emphasized the importance of curiosity and tenacity for future generations of tech professionals.
+                    </p>
+                </section>
+                <section class="speaker-profile">
+                    <img src="images/speaker_tim_berners_lee.jpg" alt="Tim Berners-Lee headshot" width="120">
+                    <h3>Sir Tim Berners-Lee</h3>
+                    <p>
+                        Inventor of the World Wide Web, Sir Tim shared insights at TechCon 2019 about the social impact of technology and the critical role of open standards in ensuring global connectivity and innovation.
+                    </p>
+                </section>
+            </div>
+        </article>
+    </main>
+    <!-- END of Main Content Structure and Alt Attribute Verification Sections -->
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
