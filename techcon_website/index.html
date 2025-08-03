@@ -19,21 +19,53 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="introduction" aria-labelledby="conf-intro">
             <h2 id="conf-intro">Welcome to TechCon 2024</h2>
             <p>TechCon 2024 is the premier annual technology conference bringing together industry leaders, innovators, and enthusiasts from around the world. Join us October 15-17 in San Francisco for three days of cutting-edge presentations, hands-on workshops, and unparalleled networking opportunities focused on AI, quantum computing, cybersecurity, and emerging technologies that will shape our future.</p>
             
-            <div class="video-container">
-                <h3>Conference Promo Video</h3>
-                <video controls width="800" height="450" aria-label="TechCon 2024 promotional video">
-                    <source src="techcon-promo.mp4" type="video/mp4">
-                    <source src="techcon-promo.webm" type="video/webm">
-                    <track src="subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
-                    <p>Your browser doesn't support HTML5 video. Here is a <a href="techcon-promo.mp4">link to the video</a> instead.</p>
-                </video>
-                <p><a href="transcript.txt">Video transcript</a></p>
+            <div class="conference-highlights">
+                <h3>What to Expect</h3>
+                <ul>
+                    <li>Keynote speeches from tech industry pioneers</li>
+                    <li>Interactive workshops on emerging technologies</li>
+                    <li>Networking opportunities with 5,000+ attendees</li>
+                    <li>Exhibition hall featuring the latest tech innovations</li>
+                </ul>
             </div>
+
+            <div class="video-container" role="region" aria-labelledby="video-label">
+                <h3 id="video-label">Experience TechCon 2024</h3>
+                <div class="video-wrapper">
+                    <video 
+                        controls 
+                        width="800" 
+                        height="450" 
+                        aria-describedby="video-desc"
+                        poster="techcon-poster.jpg"
+                    >
+                        <source src="videos/techcon-promo.mp4" type="video/mp4">
+                        <source src="videos/techcon-promo.webm" type="video/webm">
+                        <track src="videos/subtitles-en.vtt" kind="subtitles" srclang="en" label="English" default>
+                        <track src="videos/descriptions-en.vtt" kind="descriptions" srclang="en">
+                        <p>Your browser doesn't support HTML5 video. <a href="videos/techcon-promo.mp4">Download the video</a> (MP4, 25MB) or <a href="transcript.txt">read the transcript</a>.</p>
+                    </video>
+                </div>
+                <div id="video-desc" class="visually-hidden">
+                    A promotional video showing highlights from previous TechCon events, including speaker presentations, 
+                    attendee interactions, and exhibition hall activities.
+                </div>
+                <div class="video-links">
+                    <a href="transcript.txt" class="transcript-link">Video transcript</a>
+                    <a href="videos/techcon-promo.mp4" download class="download-link">Download video (MP4)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="call-to-action">
+            <h2>Ready to Join Us?</h2>
+            <p>Don't miss this opportunity to be part of the most exciting technology event of the year.</p>
+            <a href="register.html" class="cta-button">Register Now</a>
         </section>
     </main>
 
